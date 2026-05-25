@@ -17,5 +17,4 @@ function criarHeroi(){
     if(nome != ""){
         resultado.style.display = '';
     }
-    dadosHeroi.innerHTML = '<br> aaaaaaaaaaaaa';
 }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 1: Criando Objetos com Inputs</title>
+    <link rel="stylesheet" href="./Classe_e_objeto.css">
+</head>
+
+<body>
+
+    <h2> Criador de Heróis - Módulo 1</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr);">
+        <img src="Reaper_Leviathan_Fauna.webp" alt=""
+            style="filter: drop-shadow(0 0 20px rgb(151, 119, 86)); width: 100%;">
+        <img src="Ghost_Leviathan_Fauna.webp" alt="" style="filter: drop-shadow(0 0 20px rgb(0, 90, 226)); width: 100%">
+        <img src="Sea_Dragon_Leviathan_Fauna.webp" alt=""
+            style="filter: drop-shadow(0 0 20px rgb(255, 81, 0)); width: 100%">
+    </div>
+
+    <div class="caixa">
+        <label>Nome do Herói:</label>
+        <input type="text" id="nomeInput" placeholder="Ex: Aragorn">
+
+        <label>Classe:</label>
+        <select id="classeSelect">
+            <option value="Guerreiro">Guerreiro</option>
+            <option value="Mago">Mago</option>
+        </select>
+
+        <button onclick="criarHeroi()">Cria Herói</button>
+    </div>
+
+    <div class="caixa" id="resultado" style="display:none;">
+        <h3>Herói Criado com Sucesso!</h3>
+        <p id="dadosHeroi"></p>
+    </div>
+
+    <script src="./Classe_e_objeto.js">
+
+    </script>
+</body>
+
+</html>

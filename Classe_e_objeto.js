@@ -1,17 +1,19 @@
-let pessoa = {
-    nome: "Pablo",
-    idade: 20,
-    profissao: "Pedreiro"
-};
-
-console.log(pessoa.nome);
-
-
+class heroi{
+    constructor(nome, classe){
+        this.nome = nome;
+        this.classe = classe;
+    }
+}
 
 
 
 function criarHeroi(){
-    const nome = document.getElementById('nomeInput').value;
+    // capturando o que o usuário digitou/selecionou na tela
+    const nomeHeroi = document.getElementById('nomeInput').value;
+    const classeHeroi = document.getElementById('classeSelect').value;
+    // criando o objeto dianmicamente com os valores dos campos
+    const novoHeroi = new heroi(nomeHeroi, classeHeroi);
+
     const resultado = document.getElementById('resultado');
     const dadosHeroi = document.getElementById('dadosHeroi');
     if(nome != ""){
